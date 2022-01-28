@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Week5Day5Demo.CollectionAssignment;
 
 namespace Week5Day5Demo
 {
-    internal class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             //ThreadJoinDemo.DemoNoThread();
             //ThreadJoinDemo.DemoThread();
@@ -13,7 +13,12 @@ namespace Week5Day5Demo
             //ThreadSharedResourcesDemo.SimpleNoThreadDemo();
             //ThreadSharedResourcesDemo.SimpleThreadDemo();
 
-            ThreadPoolDemo.Demo();
+            //ThreadPoolDemo.Demo();
+
+            //BasicCollectionDemo.ICollectionDemo();
+            //IListDemo.Demo();
+
+            Assignment1.NewDictionaryAssignment();
         }
     }
 }

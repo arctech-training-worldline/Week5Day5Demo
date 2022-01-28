@@ -1,0 +1,12 @@
+﻿28-01-2022 16:32:56: abhijit@gmail.com has logged in
+28-01-2022 16:32:56: abhijit@gmail.com has added a new entry [xyz|test meaning]
+28-01-2022 16:32:56: abhijit@gmail.com has added a new entry [xyz1|test meaning 1]
+28-01-2022 16:32:56: abhijit@gmail.com has added a new entry [xyz2|test meaning 2]
+28-01-2022 16:32:56: abhijit@gmail.com has logged out
+28-01-2022 17:01:29 abhijit@gmail.com has logged in
+28-01-2022 17:01:29 abhijit@gmail.com has added a new entry [xyz|test meaning]
+28-01-2022 17:01:29 abhijit@gmail.com has added a new entry [xyz1|test meaning 1]
+28-01-2022 17:01:29 abhijit@gmail.com has added a new entry [xyz2|test meaning 2]
+28-01-2022 17:01:29 abhijit@gmail.com has saved his entries to the dictionary file
+28-01-2022 17:01:29 abhijit@gmail.com has logged out
+28-01-2022 17:20:50 raman123 has added a new entry [iiiooo|ddfsfsdfdsfdsfdsfdsfdsf]
