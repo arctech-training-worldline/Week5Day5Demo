@@ -32,11 +32,39 @@ namespace Week5Day5Demo.CollectionAssignment
             _dictionaryService.LoadAllWordsFromFile();
 
             ShowMenu();
+
+            _userLogs.SaveLog();
         }
 
         private void ShowMenu()
         {
             // Assignment: Show the menu and call the methods in switch case.
+            char menuId;
+            do
+            {
+                Console.WriteLine("Enter a menu item 1 to 5");
+                var key = Console.ReadKey();
+                menuId = key.KeyChar;
+
+                switch (menuId)
+                {
+                    case '1':
+                        _dictionaryService.AddNewWords();
+                        break;
+                    case '2':
+                        _dictionaryService.ShowMeaningOfWord();
+                        break;
+                    case '3':
+                        _dictionaryService.ListDictionary();
+                        break;
+                    case '4':
+                        _userLogs.DisplayLogs();
+                        break;
+                    case '5':
+                        Exit();
+                        break;
+                }
+            } while (menuId != '5');
         }
 
         public void Exit()

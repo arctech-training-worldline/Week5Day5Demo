@@ -48,6 +48,24 @@ namespace Week5Day5Demo.CollectionAssignment
         public void DisplayLogs()
         {
             // Assignment: Iterate collection and display log entries on screen.
+            Console.WriteLine("****Log History*****");
+            using (var sr = new StreamReader(LogFilePath))
+            {
+                do
+                {
+                    var line = sr.ReadLine();
+                    if (line != null)
+                    {
+                        Console.WriteLine(line);
+                    }
+                } while (!sr.EndOfStream);
+            }
+
+            Console.WriteLine("****Current Log Data*****");
+            foreach (var logEntry in _stringCollection)
+            {
+                Console.WriteLine(logEntry);
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
-ttttttttt|adsdsdsdsdsdsdsd
-iiiooo|ddfsfsdfdsfdsfdsfdsfdsf
 asafoetida|A spice used in India. Usually added to pulses to avoid stomach issues.
-test|1234444444
+iiiooo|ddfsfsdfdsfdsfdsfdsfdsf
+ttttttttt|adsdsdsdsdsdsdsd
 gun|A weapon. Usually deadly. Can shoot projectiles like a bullet.
+test|1234444444

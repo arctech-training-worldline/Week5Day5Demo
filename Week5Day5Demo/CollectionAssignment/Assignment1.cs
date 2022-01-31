@@ -38,12 +38,12 @@ namespace Week5Day5Demo.CollectionAssignment
     {
         public static void NewDictionaryAssignment()
         {
-            //var app = new WordsDictionaryApp();
-            //app.Start();
+            var app = new WordsDictionaryApp();
+            app.Start();
 
-            TestLogs();
-            TestUserAuthorization();
-            TestDictionaryService();
+            //TestLogs();
+            //TestUserAuthorization();
+            //TestDictionaryService();
         }
 
         private static void TestDictionaryService()

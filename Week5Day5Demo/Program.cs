@@ -1,4 +1,5 @@
 ﻿using Week5Day5Demo.CollectionAssignment;
+using Week5Day5Demo.DisposeDemo;
 
 namespace Week5Day5Demo
 {
@@ -19,6 +20,8 @@ namespace Week5Day5Demo
             //IListDemo.Demo();
 
             Assignment1.NewDictionaryAssignment();
+
+            //TestDisposeMethod.Demo();
         }
     }
 }

@@ -33,7 +33,7 @@ namespace Week5Day5Demo.CollectionAssignment
             Console.Write("Enter username: ");
             var userName = Console.ReadLine();
             Console.Write("Enter password: ");
-            var password = Console.ReadLine();
+            var password = GetHiddenPassword();
 
             var passwordFromDictionary = _userPasswordDictionary[userName];
 
@@ -45,6 +45,42 @@ namespace Week5Day5Demo.CollectionAssignment
             }
 
             return false;
+        }
+
+        private string GetHiddenPassword()
+        {
+            var password = "";
+            ConsoleKey key;
+            do
+            {
+                var keyInfo = Console.ReadKey();
+                key = keyInfo.Key;
+                if (keyInfo.KeyChar > 32 && keyInfo.KeyChar < 127)
+                {
+                    password += keyInfo.KeyChar;
+                    Console.Write("\b*");
+                }
+                else if (key == ConsoleKey.Backspace)
+                {
+                    if (password.Length > 0)
+                    {
+                        password = password.Substring(0, password.Length - 1);
+                        Console.Write(" \b");
+                    }
+                    else
+                        Console.Write(" ");
+                }
+                else
+                {
+                    Console.Write("\a");
+                }
+            } while (key != ConsoleKey.Enter && key != ConsoleKey.Escape);
+
+            if (key == ConsoleKey.Escape)
+                password = "";
+
+            Console.WriteLine();
+            return password;
         }
 
         public bool ReVerifyPassword(string password)

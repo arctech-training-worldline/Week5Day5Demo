@@ -81,6 +81,16 @@ namespace Week5Day5Demo.CollectionAssignment
         public void ListDictionary()
         {
             // Assignment: add code to display full dictionary with words and meanings on the screen
+            // Reading from dictionary.txt
+
+            Console.WriteLine("...Dictionary Listing.................");
+            Console.WriteLine($"{"Word", -15}Meaning");
+            Console.WriteLine("......................................");
+
+            foreach (DictionaryEntry dictionaryEntry in _dictionaryData)
+            {
+                Console.WriteLine($"{dictionaryEntry.Key, -15}{dictionaryEntry.Value}");
+            }
         }
 
         public void Save()
